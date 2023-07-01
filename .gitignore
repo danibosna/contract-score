@@ -1,0 +1,42 @@
+# Ignorar archivos generados por compiladores Solidity
+*.swp
+*.swo
+*.solc*
+*.bin
+*.abi
+*.json
+
+# Ignorar el directorio de compilación
+/build/
+
+# Ignorar dependencias y entorno de desarrollo
+/node_modules/
+/.env
+/.vscode/
+/.truffle/
+
+# Ignorar archivos generados por herramientas de construcción
+/coverage/
+/.nyc_output/
+/.solium/
+
+# Ignorar archivos de configuración local
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# Ignorar archivos de respaldo y temporales
+*~
+*.log
+*.backup
+*.tmp
+
+# Ignorar archivos de salida de pruebas
+/coverage/
+/.solidity-coverage/
+/.hardhat/
+
+# Ignorar archivos de caché
+/.cache/
+/.hardhat-cache/
