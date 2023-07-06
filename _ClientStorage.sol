@@ -13,18 +13,17 @@ contract CLientsStorage {
         // bool premium;
     }
 
-    uint256 _index;
+    uint256 _i;
 
+    address[] whiteList;
     mapping(uint256 => Client) public listOfClients;
 
     function addNewClient(string memory _userName, uint256 _ageClient, uint256 _phoneClient) public {
-        listOfClients[_index].userName = setUserName(_index, _userName);
-        listOfClients[_index].ageClient = setAgeClient(_index, _ageClient);
-        listOfClients[_index].phoneClient = setPhoneClient(_index, _phoneClient);
-        _index ++;
+        listOfClients[_i].userName = setUserName(_i, _userName);
+        listOfClients[_i].ageClient = setAgeClient(_i, _ageClient);
+        listOfClients[_i].phoneClient = setPhoneClient(_i, _phoneClient);
+        _i ++;
     }
-
-    address[] whiteList;
 
     function setUserName(uint256 _index, string memory _name) private returns(string memory) {
         updateScoreClient(_index);
