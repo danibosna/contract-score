@@ -14,6 +14,7 @@
 /.env
 /.vscode/
 /.truffle/
+*.lockb
 
 # Ignorar archivos generados por herramientas de construcción
 /coverage/
